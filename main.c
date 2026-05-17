@@ -40,7 +40,7 @@ int main()
 
         students[i].average = sum / TESTS;
 
-        if (students[i].average > students[bestIndex].average)
+        if (i == 0 || students[i].average > students[bestIndex].average)
         {
             bestIndex = i;
         }
